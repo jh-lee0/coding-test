@@ -1,14 +1,13 @@
 class Solution {
     public int solution(int[] num_list) {
-    int sum1 = 1;
-    int sum2 = 0;
+    int sum = 0;
+    int mul = 1;
         
-    for(int i = 0; i < num_list.length; i++) {
-        int n = num_list[i];
-        sum1 *= n;
-        sum2 += n;
-    }
-    return (sum1 < sum2 * sum2) ? 1 : 0;
+    for (int n : num_list) {
+        sum += n;
+        mul *= n;
+    }    
+    return (mul < sum * sum) ? 1 : 0;
         
     }
 }
