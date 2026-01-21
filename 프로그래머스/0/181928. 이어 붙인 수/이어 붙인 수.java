@@ -14,3 +14,4 @@ class Solution {
         return Integer.parseInt(odd) + Integer.parseInt(even);
     }
 }
+// 다른사람 풀이에 String 변환 없이 수를 더할 때 odd * 10, odd += n 이렇게 하면 정수로 연산이 가능!
